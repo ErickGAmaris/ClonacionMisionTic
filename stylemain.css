@@ -1,0 +1,25 @@
+header {
+	background: red;
+}
+
+main{
+	background: blue;
+}
+footer{
+	background: green;
+}
+
+.navegacion-header{
+	color: white;
+}
+
+.tarjetas-de-prductos{
+	color: rgb( 213, 255, 0);
+}
+
+#titulo{
+	border:  solid red 5px;
+	font-size: 60px;
+	text-align: center;
+	background: lightblue;
+}
