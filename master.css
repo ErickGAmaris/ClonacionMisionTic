@@ -1,0 +1,50 @@
+/*  selector de etiqueta
+Nombre de la etiqueta {
+	propiedad:  valor;
+}
+
+selector de clase
+
+.nombre-selector-de-clase{
+	propiedad:  valor;
+}
+selector de id
+
+#selector-de-id {
+	propiedad:  valor;
+}
+
+ */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+header {
+	background: red;
+	}
+main {
+	background: blue;
+}
+footer {
+	background: green;
+}
+
+button {
+	background: #ff0;
+	padding: 20px;
+}
+ 
+.btn-acceder{
+	background: #0ff;
+}
+.btn-buscar{
+	color:  rgb( 104, 46, 181);
+}
+
+#resumen {
+	font-size: 30px;
+}
+
