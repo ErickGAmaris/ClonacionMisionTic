@@ -1,0 +1,102 @@
+/*  selector de etiqueta
+Nombre de la etiqueta {
+	propiedad:  valor;
+}
+
+selector de clase
+
+.nombre-selector-de-clase{
+	propiedad:  valor;
+}
+selector de id
+
+#selector-de-id {
+	propiedad:  valor;
+}
+
+ */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.e {
+	background: rgba( 255, 0, 0, 1);
+	border: solid 19px rgb(74, 196, 86);
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	box-shadow: 0 2px 3px 3px #000;
+	transition: .3s;
+	/*
+	margin: auto;
+	text-align: center;
+	line-height: calc( 50px + 8px);
+	font-size: 2rem;
+	*/
+}
+
+.e:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.e1{
+	position: absolute;
+	right: 0px;
+}
+
+.e2{
+	position: absolute;
+	bottom: 0;
+}
+
+.e3{
+	position: absolute;
+	right: 10px;
+	bottom: 30px;
+}
+
+
+/*
+header {
+	background: red;
+	}
+main {
+	background: blue;
+}
+footer {
+	background: green;
+}
+
+button {
+	background: #ff0;
+	padding: 20px;
+}
+ 
+.btn-acceder{
+	background: #0ff;
+}
+.btn-buscar{
+	color:  rgb( 104, 46, 181);
+}
+
+#resumen {
+	font-size: 30px;
+}
+*/
+
