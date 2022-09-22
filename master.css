@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans',sans-serif;
+}
+	
+html{
+	font-size: 62.5%;
+}
+
+.btn {
+	padding: 2px 15px;
+	margin: 1px;
+	border: solid #303990;
+	background: #303990;
+	border-radius: 5px;
+	color: #fff;
+	letter-spacing: 0px;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+/*----------------------------------------*/
+.header-superior{
+	padding: 15px;
+	display:  flex;
+	justify-content: space-between;
+}
+
+.header-superior figure {
+	width: 320px;
+}
+
+.header-superior a,
+.header-superior img {
+	width: 100%;
+
+}
+
+.header-superior--derecho *{
+	display: inline-block;
+	margin-top: 9px;
+}
+
+.contenedor-tamanio-letra{
+	padding: 1px 15px 0;
+}
+
+.cambio-tamanio-letra{
+	margin: 2px;
+}
+
+.contenedor-tamanio-letra__pequenio {
+	font-size: 1.4rem;
+}
+.contenedor-tamanio-letra__normal {
+	font-size: 1.6rem;
+}
+.contenedor-tamanio-letra__grande {
+	font-size: 1.8rem;
+}
+
+
+
+
+
+.header-inferior{
+	font-size: 2rem;
+	background: #2b353b;
+	display:  flex;
+	justify-content: space-between;
+}
+
+.header-inferior--list{
+	padding: 0 15px;
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+	position: relative;
+}
+.header-inferior--list .item{
+	padding: 9px 14px 12px;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	transition: .2s;
+}
+.header-inferior--list .item:hover{
+	background: rgba(255,255,255,.1);
+}
+
+.hidden-item{
+	opacity: 0;
+	background: #dfdfdf;
+	color: #000;
+	transition: .2;
+	position: absolute;
+	bottom: 2px;
+}
+.hidden-item:hover {
+	background: hotpink;
+}
+.header-inferior--list li:hover .hidden-item{
+	opacity: 1;
+}
+
+.header-inferior--list div::before {
+	content: "|";
+	color: #616466;
+}
+
+.header-inferior--list div:last-of-type::after {
+	content: "|";
+	color: #616466;
+}
+.btn-lupa{
+	margin-right: 10px;
+}
+
