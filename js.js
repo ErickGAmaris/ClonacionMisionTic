@@ -1,5 +1,22 @@
 
+let slideIndex = 1
+showDivs( slideIndex )
 
-let cube = window.document.querySelector('div')
+function plusDivs(n){
+	showDivs(slideIndex += n)
+}
 
-cube.addEventListener('click', () => cube.classList.toggle('color-normal') ) 
+function showDivs(n){
+	let i
+	let x = document.getElementsByClassName("mySlides")
+	if ( n > x.length ){
+		slideIndex = 1
+	}
+	if ( n < 1 ){
+		slideIndex = x.length
+	}
+	for ( let i = 0; i < x.length; i++) {
+		x[i].style.display = "none"
+	}
+	x[slideIndex-1].style.display = "block";
+}

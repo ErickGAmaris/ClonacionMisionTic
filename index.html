@@ -6,12 +6,37 @@
 		<meta charset="utf-8" />
 		<meta name="description" content="Mi primera web app" />
 
-		<link rel="stylesheet" type="text/css" href="master.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="master.css" /> -->
+	<style type="text/css">
+		img {
+			width: 100%;
+		}
+		.mySlides {
+			display: none;
+		}
+
+	</style>
 
 	</head>
 	<body>
 		
-		<div></div>
+		<div class="content display-container">
+			<div class="display-container mySlides">
+				<img src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/82/banner_encuesta.jpg" >
+			</div>
+			<div class="display-container mySlides">
+				<img src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/71/CRONOGRAMA.jpg" >
+			</div>
+			<div class="display-container mySlides">
+				<img src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/80/discapacidad.png
+" >
+			</div>
+		</div>
+		<div>
+			<button class="btn display-left" onclick="plusDivs(-1)">&#10094</button>
+			<button class="btn display-right" onclick="plusDivs(1)">&#10095</button>
+
+		</div>
 		<script type="text/javascript" src="js.js"></script>
 	</body>
 </html>
