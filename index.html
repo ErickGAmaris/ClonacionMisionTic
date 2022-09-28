@@ -1,70 +1,205 @@
 <!DOCTYPE html>
-<html lang="ES">
-	<head>
-		<title>Proyecto web</title>
-
-		<!-- SEO -->
-		<meta charset="UTF-8" />
-		<meta name="description" content="Mi primer proyecto web">
-		<link rel="stylesheet" href="stylemain.css">
-	</head>
-	<body>
-
-		<div class="f1">1</div>
-		<div class="f1">1</div>
-		<div class="f1">1</div>
-		<div class="f1">1</div>
-
-<!-- 		<div class="f1">2</div>
-		<div class="f1">3</div>
-		<div class="f1">4</div>
-
- -->		<!--
-		<header>
-			<figure>
-				<img src="">
-				
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="master.css">
+</head>
+<body>
+	<header>
+		<section class="header-superior">
+			<figure class="header-superior--imagen">
+				<a>
+					<img src="https://misiontic.utb.edu.co/pluginfile.php/1/theme_mb2cg/logo/1663344927/logo-misiontic.png" alt="logo-misiontic">
+				</a>
 			</figure>
-			<nav class="navegacion-header">
-				<ul>
-					<li>Mostrar mas</li>
-					<li>Nuestros productos</li>
-					<li>Donde tenemos soporte</li>
-				</ul>
-			</nav>
-			<label>
-				<input type="text" name="">
-			</label>
-		</header>
-		<main>
-			<section>
-				<h1 id="titulo">hero</h1>
+			<section class="header-superior--botones">
+				<article class="contenedor-cambio-texto">
+					<a class="cambio-texto cambio-texto__pequenio">A</a>
+					<a class="cambio-texto cambio-texto__mediano">A</a>
+					<a class="cambio-texto cambio-texto__grande">A</a>
+				</article>
+				<button class="btn-acceder">  ACCEDER</button>
 			</section>
-			<section class="tarjetas-de-prductos">
-				<h2>productos</h2>
-				<article>tarjeta</article>
-				<article>tarjeta</article>
-				<article>tarjeta</article>
-				<article>tarjeta</article>
-			</section>
-		</main>
-		<footer>
-			<nav>
-				<ul>
-					<li>img1</li>
-					<li>img2</li>
-					<li>img3</li>
-					<li>img4</li>
-				</ul>
-			</nav>
-			<article>
-				descripcion de la web
-			</article>
-			<form>
-				
-			</form>
-		</footer>
 
-		-->
-	</body>
+		</section>
+		<section class="header-inferior">
+			<section class="main-navigation">
+				<div class="main-navigation--left">
+					<nav>
+						<ul>
+							<li>
+								<a class="item first-item ">Mision Tic</a>
+								<div class="drop-nav">
+									<a class="item second-item ">Conoce el programa</a>	
+									<a class="item second-item">Actualizacion de datos y matricula</a>	
+								</div>
+							</li>
+							<li>
+								<a class="item first-item ">Acerca de Savio</a>
+								<div class="drop-nav">
+									<a class="item second-item ">Preguntas frecuentes</a>	
+									<a class="item second-item">Manual savio</a>	
+								</div>
+							</li>
+							<li>
+								<a class="item first-item ">Mesa de servicios</a>
+								<div class="drop-nav">
+									<a class="item second-item ">Manual-mesa de servicios</a>	
+								</div>
+							</li>
+							<li>
+								<a class="item first-item ">Encuesta de satisfaccion</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="item js-item btn-toggle main-navigation--right">
+					<span>Q</span>
+				</div>
+			</section>
+			<section style="display: none;">
+				
+			</section>
+		</section>
+	</header>
+
+	<main>
+		<section class="banner">
+			<figure>
+				<img class="img-hidden" src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/85/talleremocional.jpg">
+				<img class="img-hidden" src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/83/comunicacion.jpg">
+				<img class="img-hidden" src="https://misiontic.utb.edu.co/pluginfile.php/1/local_mb2slides/attachment/57/vida-academica.png">
+
+
+				<button onclick="desplazarBanner(-1)"  class="btn btn-banner-left"><</button>
+				<button onclick="desplazarBanner(1)"  class="btn btn-banner-right">></button>
+			</figure>	
+			
+
+
+		</section>
+
+		<section class="seccion-bienvenida">
+				<article class="seccion-bienvenida-mensaje">
+					<h2>Bienvenido Tripulante al viaje que te llevará a ser uno de los 5000 colombianos formados virtualmente en habilidades de programación, inglés y habilidades personales, gracias al programa Misión TIC 2022 y a la Universidad Tecnológica de Bolívar.</h2>
+					<h2 class="seccion-bienvenida-motivacion">
+						¡Sé parte de la Cuarta Revolución Industrial!
+					</h2>
+				</article>
+				<div class="seccion-bienvenida-decorador"></div>
+		</section>
+
+		<section class="secciones-mision-tic">
+
+			<section class="seccion-mision-tic secciones-mision-tic--bienestar">
+				<figure>
+					<div class="contenedor-icon">
+						<div class="icono"></div>
+					</div>
+					<figcaption class="seccion-mision-tic--titulo">Bienestar</figcaption>
+				</figure>
+				<article class="seccion-mision-tic--resumen">
+					Estrategias y acompañamiento que te ayudarán a mantener tu equilibrio emocional y mental.
+				</article>			
+			</section>
+			<section class="seccion-mision-tic secciones-mision-tic--noticias">
+				<figure>
+					<div class="contenedor-icon">
+						<div class="icono"></div>
+					</div>
+					<figcaption class="seccion-mision-tic--titulo">Noticias</figcaption>
+				</figure>
+				<article class="seccion-mision-tic--resumen">
+					Un espacio único con las noticias y comunicados más importantes del programa Misión TIC UTB 2022.
+				</article>			
+			</section>
+			<section class="seccion-mision-tic secciones-mision-tic--eventos">
+				<figure>
+					<div class="contenedor-icon">
+						<div class="icono"></div>
+					</div>
+					<figcaption class="seccion-mision-tic--titulo">Eventos</figcaption>
+				</figure>
+				<article class="seccion-mision-tic--resumen">
+					Conoce los próximos eventos, fechas y enlaces a los que podrás asistir en el programa.
+				</article>			
+			</section>
+			<section class="seccion-mision-tic secciones-mision-tic--vida-academica">
+				<figure>
+					<div class="contenedor-icon">
+						<div class="icono"></div>
+					</div>
+					<figcaption class="seccion-mision-tic--titulo">Vida Academica</figcaption>
+				</figure>
+				<article class="seccion-mision-tic--resumen">
+					Toda la información académica, grabaciones de talleres magistrales Despeja tus Dudas y nivelaciones lo encontrarás en esta sección.
+				</article>			
+			</section>
+
+		</section>
+
+
+
+		<section class="video-preguntas"></section>
+	</main>
+
+	<footer>
+		<section class="sobre-savio">
+			<figure class="container-img container-icon-sabio">
+				<img src="https://misiontic.utb.edu.co/imgmintic/logos/Logo-savio.png">
+			</figure>
+			<article>
+				<p class="sobre-sabio--descroption">
+					Universidad Tecnológica de Bolívar – 2017 Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.
+				</p>
+				<p class="sobre-savio-resolucion">
+					Resolución No 961 del 26 de octubre de 1970 a través de la cual la Gobernación de Bolívar otorga la Personería Jurídica a la Universidad Tecnológica de Bolívar
+				</p>	
+			</article>
+			<figure class="container-img container-resolucion">
+				<img src="https://virtualformularios.utb.edu.co/utb-moodle-2022/misiontic/Logos/logo_mintic.png">
+			</figure>
+		</section>
+		<section>
+			<p>Más Información SAVIO</p>
+			<p>Parque Industrial y Tecnológico</p>
+			<p>Carlos Vélez Pombo</p>
+			<p>Km 1 Vía Turbaco.</p>
+			<p>Cartagena - Colombia</p>
+			<p>Política de tratamiento de datos</p>
+		</section>
+		<section class="contacto">
+			<h4 class="contaco-titulo">CONTACTO</h4>
+			<h4 class="contaco-titulo">MISIÓN TIC 2022 - UTB</h4>
+
+			<h5 class="contaco-sub-titulo">Inquietudes o Solicitudes</h5>
+			<p>pqrmisionticutb@utb.edu.co</p>
+			<p>Horario de atención:</p>
+			<p>Lun a Vie 7:00 a.m. -12:00pm y de 1:00pm - 5:00 p.m.</p>
+		</section>
+		<section class="enlaces">
+			<h4 class="enlaces-titulo">Facebook Misión TIC UTB</h4>
+
+			<div class="enlaces--container-button"><button class="btn"> f MISSION TIC UTB</button></div>
+
+			<p>Redes oficiales UTB</p>
+			<p>WWW.UTB.EDU.CO</p>
+
+			<nav class="nav-redes">
+				
+						<div class="circle-div"></div>
+						<div class="circle-div"></div>
+						<div class="circle-div"></div>
+						<div class="circle-div"></div>
+						<div class="circle-div"></div>
+
+			</nav>
+
+		</section>
+	</footer>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
 </html>
